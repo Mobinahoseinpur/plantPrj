@@ -1,5 +1,6 @@
 @import './variables.css';
 @import './fonts.css';
+@import url('cssComponent/header.css');
 /* 
 ====================
     default styles
@@ -8,14 +9,15 @@
 html{
     box-sizing: border-box;
     font-size: 10px;
-}
-body{
+  }
+  body{
     line-height: 1.6;
     font-size: 1.6rem;
     font-family: var(--primary-font);
     direction: rtl;
-}
-*,*::after,*::before{
+  }
+  *,*::after,*::before{
+  transition: 0.7s;
     outline: none;
     box-sizing: inherit;
 }
@@ -32,3 +34,100 @@ a:hover{
     start header
 ====================
 */
+.home{
+    padding: 3.5rem 0 2rem 0;
+    font-family:var(--primary-font) ;
+  }
+  
+  .home__container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 99%;
+    margin: -3.5rem 0 -2rem 0  ;
+    padding: 0;
+  }
+  
+  .home__img{
+    width: 270px;
+    justify-self: center;
+  }
+  .home__data{
+    width: 30rem;
+    order: 1;
+  }
+  .home__title{
+    font-size: 4rem;
+    line-height: 140%;
+    margin-bottom: 2rem;
+    font-family: var(--primary-font-Bold);
+  }
+  
+  .home__description{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    width: 90%;
+  }
+  .button--flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  .button {
+    display: inline-block;
+    background-color: var(--dark-green);
+    color: #FFF;
+    padding: 1rem 1.75rem;
+    border-radius: 0.5rem;
+    transition: .3s;
+}
+.button:hover {
+  border: 1px solid var(--dark-green);
+  background-color:transparent ;
+
+}
+  /* //! */
+  .home__social{
+    position: absolute;
+    top: 3rem;
+    left: -1rem;
+    display: grid;
+    justify-items: center;
+    /* row-gap: 3.5rem; */
+  }
+  
+  .home__social-follow{
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: var(--dark-gray);
+    position: relative;
+    transform: rotate(90deg);
+  }
+  
+  .home__social-follow::after{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 2px;
+    background-color:var(--primary-color);
+    right: -30%;
+    top: 50%;
+  }
+  
+  .home__social-links{
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 7rem;
+  }
+  
+  .home__social-link{
+    font-size: 2rem;
+    color: var(--dark-gray);
+    transition: .3s;
+  }
+  
+  .home__social-link:hover{
+    transform: translateX(.25rem);
+  }
+  

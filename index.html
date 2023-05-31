@@ -1,66 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> فروشگاه گیاه</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="./vendor/fontAwesome/all.min.css">
-    <link rel="stylesheet" href="styles/index.css">
-</head>
-<body>
-        <!-- 
-        ====================
-            start header
-        ==================== 
-        -->
-        <header class="header">
-            <div class="top">
-                <div class="container-fluid">
-                    <div class="top-bar__content">
-                        <div class="top-bar__right">
-                            <ul class="top-bar__menu">
-                                <li class="top-bar__item">
-                                    <a href="#" class="top-bar__link">html</a>
-                                </li>
-                                <li class="top-bar__item">
-                                    <a href="#" class="top-bar__link">html</a>
-                                </li>
-                                <li class="top-bar__item">
-                                    <a href="#" class="top-bar__link">html</a>
-                                </li>
-                                <li class="top-bar__item">
-                                    <a href="#" class="top-bar__link">html</a>
-                                </li>
-                                <li class="top-bar__item">
-                                    <a href="#" class="top-bar__link">html</a>
-                                </li>
-                                <li class="top-bar__item">
-                                    <a href="#" class="top-bar__link">html</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="top-bar__left">
-                            <div class="top-bar__email">
-                                <a href="#" class="top-bar__email-text top-bar__link">
-                                    mbn@yahoo.com
-                                </a>
-                                <i class="fas fa-envelope top-bar__email--icon"></i>
-                            </div>
-                            <div class="top-bar__phone">
-                                <a href="#" class="top-bar__phone-text top-bar__link">
-                                    mbn@yahoo.com
-                                </a>
-                                <i class="fas fa-phone top-bar__phone-icon"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه گیاه</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="vendor/Bootstrap/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+  </head>
+  <body>
+    
+    <!--==================== start header ====================-->
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav__retentive">
+            <a href="#" class="app-logo">
+              <img
+                src="./img/logo/green.png"
+                alt="Camping Web"
+                class="app-logo__img"
+              />
+            </a>
+            <ul class="menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link">صفحه اصلی</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">محصولات</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">بلاگ</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">درباره ما</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">سوالات پر تکرار</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">ارتباط با ما</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-menu">
+            <ul class="mobile-menu">
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">صفحه اصلی</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">محصولات</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">بلاگ</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">درباره ما</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">سوالات پر تکرار</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">ارتباط با ما</a>
+              </li>
+              <div class="nav-menu__links">
+                <a href="#" class="nav-menu__link">ورود</a>
+                <a href="#" class="nav-menu__link nav-menu__link--border"
+                  >ثبت نام</a
+                >
+              </div>
+            </ul>
+          </div>
+          <div class="header__links">
+            <a href="#" class="header__link">ورود</a>
+            <a href="#" class="header__link header__link--border">ثبت نام</a>
+          </div>
+
+          <div class="nav__btn">
+            <span class="nav__btn-line"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--==================== start header ====================-->
+    <main class="main">
+      <div class="container">
+        <section class="home" id="home">
+          <div class="home__container  grid">
+
+
+            <div class="home__data">
+              <h1 class="home__title">
+                گیاهان زندگی شما <br />
+                را بهتر خواهند کرد
+              </h1>
+              <p class="home__description">
+                طراحی باورنکردنی گیاه برای دفاتر کار یا آپارتمان و منزل های خود
+                ایجاد کنید. به ایده های جدید خود طراوت بیافزایید.
+              </p>
+              <a href="#about" class="button button--flex">
+                درباره ما 
+                <i class="fa fa-angle-left button__icon" aria-hidden="true"></i>
+                
+              </a>
             </div>
-        </header>
-    
-    
-    <script src="./vendor/fontAwesome/all.min.js"></script>
-</body>
+
+            <img src="img/home.png" alt="" class="home__img" />
+            <div class="home__social">
+              <span class="home__social-follow">ما را دنبال کنید</span>
+
+              <div class="home__social-links">
+                <a href="https://www.facebook.com/" target="_blank" class="home__social-link"
+                >
+                <i class="fa fa-facebook" ></i>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                  <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/"  target="_blank" class="home__social-link">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="./scripts/app.js"></script>
+  </body>
 </html>
